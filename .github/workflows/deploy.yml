@@ -20,7 +20,7 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 24 # Bumped this to 24 to get rid of that deprecation warning too!
           cache: "npm"
 
       - name: Install dependencies
@@ -28,6 +28,9 @@ jobs:
 
       - name: Build the project
         run: npm run build
+        # This block right here injects your secret into Vite's build environment
+        env:
+          VITE_BOOKS_API_KEY: ${{ secrets.VITE_BOOKS_API_KEY }}
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
