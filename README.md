@@ -1,5 +1,7 @@
 # Page Turner - a new tab for book lovers
 
+![](assets/img/PageTurner.png)
+
 ## The Inspiration
 
 Do you have trouble finding new books to read ?
@@ -15,3 +17,30 @@ Instead i want to _completely_ **randomize** my book recommendations - and get a
 
 This is exactly the core idea of Page Turner - you make **completely random** book recommendations part of the everyday,
 by getting them directly in the new tab page !
+
+So the idea's i had for the project that i was actually able to use were these :
+
+- A recommendation with a title, a book cover, and a quick description of the book
+
+![](assets/img/book.png)
+
+- a direct link to the books actual google books page
+
+![](assets/img/readMoreBtn.png)
+
+- A way to save the books u find interesting (cause i always forget book names)
+
+![](assets/img/readingList.png)
+
+![](assets/img/SaveBtn.png)
+
+- a way to reload and not lose the book you were on
+- skip to next book (bookscrolling instead of doomscrollin :P)
+
+![](assets/img/NextBtn.png)
+
+## The Implementation :
+
+The site was built using pure html, css and javascript, using vite and npm.
+
+It uses the Google Books API to fetch book descriptions, cover pages and titles - and the links to the books.
