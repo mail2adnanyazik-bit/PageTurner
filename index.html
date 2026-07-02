@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page Turner</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=Inter:opsz,wght@14..32,300..700&display=swap"
+    />
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body>
+    <div id="app">
+      <div class="container">
+        <header class="header">
+          <h1>Page Turner</h1>
+          <p class="subtitle">book discovery :D</p>
+        </header>
+
+        <section class="book-section" id="bookSection">
+          <div class="cover-wrapper">
+            <img
+              id="cover"
+              src=""
+              alt="Book Cover 
+            "
+            />
+          </div>
+          <div class="book-info">
+            <h2 class="title" id="title">Loading ...</h2>
+            <p class="author" id="author"></p>
+            <div class="description" id="description">
+              Finding a great read for ya ...
+            </div>
+            <div class="actions">
+              <a id="readLink" href="#" target="_blank" rel="noopener"
+                >Read more</a
+              >
+              <button class="btn-save" id="saveBtn">Save</button>
+              <button class="btn-next" id="nextBtn">Next Book</button>
+            </div>
+          </div>
+        </section>
+
+        <section class="list-section">
+          <h3>My Reading List :</h3>
+          <ul id="listContainer">
+            <li class="empty-message">
+              ✨ Looking kind a empty in here. Maybe save a book !
+            </li>
+          </ul>
+        </section>
+      </div>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
